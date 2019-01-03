@@ -1,26 +1,26 @@
-#encoding: cp866
+#encoding: UTF-8
 
 x = rand(0..100)
 
 
-print "Я загадал число, угадай какое? (от 0 до 100)"
+print "╨п ╨╖╨░╨│╨░╨┤╨░╨╗ ╤З╨╕╤Б╨╗╨╛, ╤Г╨│╨░╨┤╨░╨╣ ╨║╨░╨║╨╛╨╡? (╨╛╤В 0 ╨┤╨╛ 100)"
 
 n = 10
 1.upto(n) do |nn|
-puts "Попытка #{nn}. Осталось попыток:#{n-nn+1}"
+puts "╨Я╨╛╨┐╤Л╤В╨║╨░ #{nn}. ╨Ю╤Б╤В╨░╨╗╨╛╤Б╤М ╨┐╨╛╨┐╤Л╤В╨╛╨║:#{n-nn+1}"
 
 num = gets.to_i
 
-	if num == x
-	puts "Молодец, угадал"
-	sleep 3
-	exit
+  if num == x
+  puts "╨Ь╨╛╨╗╨╛╨┤╨╡╤Ж, ╤Г╨│╨░╨┤╨░╨╗"
+  sleep 3
+  exit
 
         elsif num < x
-        puts "Нет, больше "
+        puts "╨Э╨╡╤В, ╨▒╨╛╨╗╤М╤И╨╡ "
 
         elsif num > x
-        puts "Нет, меньше "
+        puts "╨Э╨╡╤В, ╨╝╨╡╨╜╤М╤И╨╡ "
 
         end
 
@@ -29,4 +29,3 @@ end
 
 puts " press enter to exit "
 gets
-
